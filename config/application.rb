@@ -36,6 +36,8 @@ module Cookbook
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
+    RPXNow.api_key = "6e8d5cc7f73b7d52ab232190df08de0796baa3ef"
+
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
 
