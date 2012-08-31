@@ -1,0 +1,14 @@
+<%= f.input :ingredient_id, :for => :ingredients do |ingr_form| %>
+    <%= ingr_form.inputs %>
+        <%= ingr_form.input :name %>
+        <%= ingr_form.input :unit_id %>
+    <% end %>
+
+
+
+
+    , :for => :component do |co_form| %>
+    <%= co_form.input :ingredient_id%>
+    <%= co_form.input :amount %>
+    <%= co_form.input :recipe_id %>
+    <% end 

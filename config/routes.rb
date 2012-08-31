@@ -1,4 +1,8 @@
 Cookbook::Application.routes.draw do
+  resources :components
+
+  resources :ingredients
+
   resources :recipes
 
   root to: 'recipes#index'

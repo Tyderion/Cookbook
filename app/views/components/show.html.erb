@@ -1,0 +1,19 @@
+<% title "Component" %>
+
+<p>
+  <strong>Recipe:</strong>
+  <%= @component.recipe_id %>
+</p>
+<p>
+  <strong>Ingredient:</strong>
+  <%= @component.ingredient_id %>
+</p>
+<p>
+  <strong>Amount:</strong>
+  <%= @component.amount %>
+</p>
+<p>
+  <%= link_to "Edit", edit_component_path(@component) %> |
+  <%= link_to "Destroy", @component, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", components_path %>
+</p>

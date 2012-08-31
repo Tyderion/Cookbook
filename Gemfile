@@ -2,6 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'bootstrap-sass'
+gem 'devise'
+gem 'formtastic'
+
+group :development do
+gem "nifty-generators"
+gem "annotate"
+end
+gem 'mocha'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -37,3 +45,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem "mocha", :group => :test

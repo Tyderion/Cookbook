@@ -1,0 +1,8 @@
+<%= semantic_form_for @component,  :namespace => 'comp_form' do |f| %>
+<%= f.inputs do %>
+  <%= f.input :recipe_id %>
+  <%=  f.input :ingredient_id %>
+  <%= f.input :amount %>
+  <% end %>
+  <%= f.actions %>
+<% end %>
